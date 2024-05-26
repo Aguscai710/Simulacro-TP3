@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/inicio">
+
+    <fragment
+        android:id="@+id/detail_Screen"
+        android:name="com.example.simulacro_parcial_tp3.fragments.Detail_Screen"
+        android:label="fragment_detail__screen"
+        tools:layout="@layout/fragment_detail__screen" />
+    <fragment
+        android:id="@+id/favoritos"
+        android:name="com.example.simulacro_parcial_tp3.fragments.Favoritos"
+        android:label="fragment_favoritos"
+        tools:layout="@layout/fragment_favoritos" />
+    <fragment
+        android:id="@+id/inicio"
+        android:name="com.example.simulacro_parcial_tp3.fragments.Inicio"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_inicio_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/publicacion"
+        android:name="com.example.simulacro_parcial_tp3.fragments.Publicacion"
+        android:label="fragment_publicacion"
+        tools:layout="@layout/fragment_publicacion" />
+    <fragment
+        android:id="@+id/setting"
+        android:name="com.example.simulacro_parcial_tp3.fragments.Setting"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.simulacro_parcial_tp3.fragments.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/drawer"
+        android:name="com.example.simulacro_parcial_tp3.fragments.Drawer"
+        android:label="fragment_drawer"
+        tools:layout="@layout/fragment_drawer" >
+        <action
+            android:id="@+id/action_drawer_self"
+            app:destination="@id/drawer" />
+    </fragment>
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.simulacro_parcial_tp3.fragments.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.simulacro_parcial_tp3.activities.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+</navigation>
